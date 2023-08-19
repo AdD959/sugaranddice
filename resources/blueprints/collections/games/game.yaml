@@ -1,0 +1,213 @@
+title: Game
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              width: 50
+          -
+            handle: date_added
+            field:
+              mode: single
+              inline: false
+              full_width: false
+              columns: 1
+              rows: 1
+              time_enabled: false
+              time_seconds_enabled: false
+              type: date
+              display: 'Date Added'
+              icon: date
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 25
+          -
+            handle: copies
+            field:
+              type: integer
+              display: Copies
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 25
+          -
+            handle: image
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              folder: games
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 33
+          -
+            handle: designers
+            field:
+              type: list
+              display: Designer/s
+              icon: list
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 33
+          -
+            handle: publishers
+            field:
+              type: list
+              display: Publisher/s
+              icon: list
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 33
+          -
+            handle: short_description
+            field:
+              input_type: text
+              character_limit: 150
+              antlers: false
+              type: text
+              display: 'Short Description'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: long_description
+            field:
+              antlers: false
+              type: textarea
+              display: 'Long Description'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: purchaseable
+            field:
+              default: false
+              type: toggle
+              display: Purchaseable
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
+          -
+            handle: popular
+            field:
+              default: false
+              type: toggle
+              display: Popular
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
+          -
+            handle: complexity
+            field:
+              type: float
+              display: Complexity
+              icon: float
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
+          -
+            handle: time_max
+            field:
+              min: 0
+              step: 5
+              type: range
+              display: 'Time Max'
+              icon: range
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              max: 600
+              width: 50
+          -
+            handle: time_min
+            field:
+              min: 0
+              max: 120
+              step: 10
+              default: 30
+              type: range
+              display: 'Time Min'
+              icon: range
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
+          -
+            handle: min_players
+            field:
+              type: integer
+              display: 'Min Players'
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
+          -
+            handle: max_players
+            field:
+              type: integer
+              display: 'Max Players'
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
+          -
+            handle: game_categories
+            field:
+              type: terms
+              taxonomies:
+                - game_categories
+              display: 'Game Categories'
+              mode: select

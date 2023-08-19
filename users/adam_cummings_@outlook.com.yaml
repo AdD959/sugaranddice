@@ -1,0 +1,8 @@
+name: Adam
+super: true
+id: f4bd1da1-6d93-47f6-a2de-f9c198c69edd
+password_hash: $2y$10$3POS3U7CJ1aGJMf0zbRlUO9hrpV01XWMVUrFy9S7ymEva6NpugfBS
+preferences:
+  taxonomies:
+    game_categories:
+      after_save: create_another

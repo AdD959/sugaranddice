@@ -1,0 +1,26 @@
+<div class="mt-12 flex flex-col justify-between h-full bg-white w-full">
+    <div>
+        <span class="flex justify-between items-center">
+            <h2 class="text-3xl mb-2">{{ title }}</h2>
+            <span>
+                <button class="bg-slate-950 text-white px-2 rounded-md ">Book now</button>
+            </span>
+        </span>
+        <p class="text-sm">{{ short_description }}</p>
+        <a class="mt-2 inline-block text-[#f87407] border-b border-transparent hover:border-[#f87407]"
+            href="/games/{{ slug }}">more info...</a>
+    </div>
+    <div class="flex justify-between">
+        <div class="flex items-center">
+            {{ svg src="/assets/icons/person.svg" class="fill-current text-white mr-2 w-6" }}
+            {{ min_players }} - {{ max_players }}
+        </div>
+        <div class="flex items-center">
+            {{ svg src="/assets/icons/timer.svg" class="fill-current text-white mr-2 w-6" }}
+            {{ time_min }} - {{ time_max }}
+        </div>
+        <div class="flex items-center">
+            Complexity: {{ complexity }} / 5
+        </div>
+    </div>
+</div>

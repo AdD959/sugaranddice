@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title ?? site:name }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    {{ vite src="resources/js/site.js|resources/css/site.css" }}
+</head>
+<header>
+    <a href="/">
+        <img class="w-[800px] mt-5 mb-10 px-5" src="/assets/long-logo-with-die-(1).webp" alt="">
+    </a>
+    <nav class="mb-5">
+        <ul class="flex gap-4">
+            <li class="border-2 border-black rounded-lg hover:bg-[#09c9d7] bg-white">
+                <a href="/gaming-library" class="p-2 block">Our Game Library</a>
+            </li>
+            <li class="border-2 border-black rounded-lg hover:bg-[#09c9d7] bg-white">
+                <a href="" class="p-2 block">Opening Hours</a>
+            </li>
+            <li class="border-2 border-black rounded-lg hover:bg-[#09c9d7] bg-white">
+                <a href="" class="p-2 block">Bookings</a>
+            </li>
+            <li class="border-2 border-black rounded-lg hover:bg-[#09c9d7] bg-white">
+                <a href="" class="p-2 block">Events</a>
+            </li>
+            <li class="border-2 border-black rounded-lg hover:bg-[#09c9d7] bg-white">
+                <a href="" class="p-2 block">Food</a>
+            </li>
+            <li class="border-2 border-black rounded-lg hover:bg-[#09c9d7] bg-white">
+                <a href="" class="p-2 block">Shop</a>
+            </li>
+            <li class="border-2 border-black rounded-lg hover:bg-[#09c9d7] bg-white">
+                <a href="" class="p-2 block">Members</a>
+            </li>
+            <li class="border-2 border-black rounded-lg hover:bg-[#09c9d7] bg-white">
+                <a href="" class="p-2 block">Classes</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body class="font-roboto flex flex-col max-w-screen-xl items-center mx-auto bg-slate-900">
+    {{ template_content }}
+</body>
+
+</html>
