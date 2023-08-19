@@ -2,7 +2,7 @@
 id: ea0e6bdf-1f3b-40d0-8b82-ef5ea4a83e40
 blueprint: game
 title: Evergreen
-date_added: '2023-08-19'
+date_added: '2021-07-06'
 copies: 1
 image: games/evergreen.png
 designers:
@@ -19,7 +19,7 @@ popular: false
 time_max: 45
 time_min: 60
 updated_by: f4bd1da1-6d93-47f6-a2de-f9c198c69edd
-updated_at: 1692454493
+updated_at: 1692464798
 complexity: 2.09
 min_players: 1
 max_players: 4

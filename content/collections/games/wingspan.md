@@ -2,7 +2,7 @@
 id: 3c4ff9cb-12fe-4f1c-bd3b-7529ac2fcf0d
 blueprint: game
 title: Wingspan
-date_added: '2023-08-19'
+date_added: '2019-05-15'
 copies: 1
 image: games/wingspan.png
 designers:
@@ -33,5 +33,5 @@ game_categories:
   - educational
   - cards
 updated_by: f4bd1da1-6d93-47f6-a2de-f9c198c69edd
-updated_at: 1692463195
+updated_at: 1692464846
 ---

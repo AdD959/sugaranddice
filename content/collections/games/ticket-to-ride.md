@@ -5,13 +5,13 @@ title: 'Ticket to Ride'
 image: games/ticket-to-ride.png
 min_players: 2
 max_players: 5
-date_added: '2023-08-19'
+date_added: '1997-05-14'
 time_min: 30
 time_max: 60
 popular: true
 purchaseable: true
 updated_by: f4bd1da1-6d93-47f6-a2de-f9c198c69edd
-updated_at: 1692454089
+updated_at: 1692464832
 copies: 5
 designers:
   - 'Alan R. Moon'
