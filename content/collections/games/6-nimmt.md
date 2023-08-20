@@ -10,4 +10,10 @@ game_categories:
   - hand-management
 complexity: 1.2
 time_min: 45
+image: games/6-nimmt.png
+purchaseable: false
+popular: false
+time_max: 0
+updated_by: f4bd1da1-6d93-47f6-a2de-f9c198c69edd
+updated_at: 1692526471
 ---

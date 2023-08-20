@@ -10,4 +10,10 @@ game_categories:
   - set-collection
 complexity: 2.22
 time_min: 30
+image: games/7-wonders-duel.png
+purchaseable: false
+popular: false
+time_max: 0
+updated_by: f4bd1da1-6d93-47f6-a2de-f9c198c69edd
+updated_at: 1692526488
 ---
