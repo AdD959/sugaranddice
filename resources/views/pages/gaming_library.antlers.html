@@ -1,5 +1,6 @@
-<section class="flex flex-wrap gap-x-20 justify-center">
-    {{ collection:games }}
+<section x-data="library">
+<div class="flex flex-wrap gap-x-20 justify-center">
+    {{ collection:games sort="short_description" }}
     <div class="relative mt-20 ml-20 group">
         <div class="relative w-48 rounded-lg p-2 h-20 flex items-center bg-slate-800">
             <h2 class="pl-10 text-{{ title | length > 8 ? '' : '3' }}xl text-white">{{ title }}</h2>
@@ -56,4 +57,5 @@
         </div>
     </div>
     {{ /collection:games }}
+</div>
 </section>
